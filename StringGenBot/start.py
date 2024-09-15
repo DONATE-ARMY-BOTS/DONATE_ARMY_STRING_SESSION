@@ -22,11 +22,11 @@ Mᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ : [ᴅᴏɴᴀᴛᴇ_ᴀʀᴍʏ™](https://t.me/
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ", callback_data="generate")
+                    InlineKeyboardButton(text="⚡𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄 𝐒𝐓𝐑𝐈𝐍𝐆⚡", callback_data="generate")
                 ],
                 [
-                    InlineKeyboardButton("🥀 𝐎𝐟𝐟𝐢𝐜𝐞 🥀", url="https://t.me/DONATE_ARMY_BOTS"),
-                    InlineKeyboardButton("❣️ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 ❣️", url="https://t.me/DONATE_ARMY_BOTS_CHAT_GROUP")
+                    InlineKeyboardButton("❣️ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 ❣️", url="https://t.me/DONATE_ARMY_BOTS_CHAT_GROUP"),
+                    InlineKeyboardButton("🥀 𝐎𝐟𝐟𝐢𝐜𝐞 🥀", url="https://t.me/DONATE_ARMY_BOTS")
                 ]
             ]
         ),
