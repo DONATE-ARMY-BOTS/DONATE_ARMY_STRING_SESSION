@@ -26,7 +26,7 @@ Mᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ : [ᴅᴏɴᴀᴛᴇ_ᴀʀᴍʏ™](https://t.me/
                 ],
                 [
                     InlineKeyboardButton("🥀 𝐎𝐟𝐟𝐢𝐜𝐞 🥀", url="https://t.me/DONATE_ARMY_BOTS"),
-                    InlineKeyboardButton("❣️ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 ❣️", url="https://t.me/DONATE_ARMY_BOTS_CHAT_GROUP-")
+                    InlineKeyboardButton("❣️ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 ❣️", url="https://t.me/DONATE_ARMY_BOTS_CHAT_GROUP")
                 ]
             ]
         ),
