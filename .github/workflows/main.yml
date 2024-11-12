@@ -1,0 +1,39 @@
+name: Run main.py Every Hour
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # Run every 1 hour
+    - cron: '0 * * * *'  # This cron expression runs the workflow every hour on the hour.
+
+jobs:
+  run_main_workflow:
+    runs-on: ubuntu-22.04  # Updated to Ubuntu 22.04
+
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v2
+
+      - name: Set up Python (version 3.10)
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.10'  # Specify Python 3.10 as the best version
+
+      - name: Install required packages from requirements.txt
+        run: |
+          if [ -f "requirements.txt" ]; then
+            pip install -r requirements.txt
+          else
+            echo "Error: requirements.txt file not found!"
+            exit 1
+          fi
+
+      - name: Run main.py
+        run: |
+          nohup python3 main.py &  # Run main.py in the background
+
+      - name: Keep the workflow alive
+        run: |
+          while true; do sleep 60; done  # Keeps the job alive indefinitely to prevent it from going offline
