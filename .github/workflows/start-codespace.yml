@@ -23,7 +23,7 @@ jobs:
      
       - name: Check Codespace Status
         run: |
-          CODESPACE_NAME="supreme-umbrella-4jg59rpq4v49h5rwr"
+          CODESPACE_NAME="verbose-space-engine-v6g975qqgxj4cp5v7"
           STATUS=$(gh codespace list --json name,state | jq -r --arg name "$CODESPACE_NAME" '.[] | select(.name == $name) | .state')
 
           echo "Codespace status: $STATUS"
