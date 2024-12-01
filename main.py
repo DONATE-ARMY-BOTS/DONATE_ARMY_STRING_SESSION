@@ -11,19 +11,19 @@ logging.basicConfig(
 
 logging.getLogger("pymongo").setLevel(logging.ERROR)
 
-# Initialize the Client
+StartTime = time.time()
 app = Client(
-    "Anonymous",
+    "DONATE_ARMY_STRING_SESSION",
     api_id=config.API_ID,
     api_hash=config.API_HASH,
     bot_token=config.BOT_TOKEN,
     in_memory=True,
-    plugins=dict(root="StringGenBot"),
+    plugins=dict(root="DONATE_ARMY_STRING_SESSION"),
 )
 
 
 if __name__ == "__main__":
-    print("𝖲𝐭𝐚𝐫𝐭𝐢𝐧𝐠 𝖸𝐨𝐮𝐫 𝖲𝐭𝐫𝐢𝐧𝐠 𝖡𝐨𝐭...")
+    print("𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐒𝐭𝐫𝐢𝐧𝐠 𝐁𝐨𝐭...")
     try:
         app.start()
     except (ApiIdInvalid, ApiIdPublishedFlood):
@@ -31,7 +31,7 @@ if __name__ == "__main__":
     except AccessTokenInvalid:
         raise Exception("Your BOT_TOKEN is not valid.")
     uname = app.get_me().username
-    print(f"@{uname} 𝐒𝐓𝐀𝐑𝐓𝐄𝐃 𝐒𝐔𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘. 𝐌𝐀𝐃𝐄 𝐁𝐘 ~ 𝘿𝙊𝙉𝘼𝙏𝙀 ๛ 𝘼𝙍𝙈𝙔 ✘ 𝘽𝙊𝙏𝙎 ™ 🇮🇳 🤗")
+    print(f"@{uname} 𝐒𝐓𝐀𝐑𝐓𝐄𝐃 𝐒𝐔𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘. 𝐌𝐀𝐃𝐄 𝐁𝐘 @𝗧𝗛𝗘_𝗩𝗜𝗣_𝗕𝗢𝗬 🤗")
     idle()
     app.stop()
-    print("𝗕𝗢𝗧 𝗦𝗧𝗢𝗣𝗣𝗘𝗗 !")
+    print("𝗕𝗢𝗧 𝗦𝗧𝗢𝗣𝗣𝗘𝗗 𝗕𝗬 𝗕𝗬 !")
